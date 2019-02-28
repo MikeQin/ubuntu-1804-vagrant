@@ -1,5 +1,5 @@
-# Ubuntu 18.04 LTS Using Vagrant
-Vagrantfile to Build a Ubuntu 18.04 LTS Desktop
+# Ubuntu Desktop 18.04 LTS Using Vagrant for VirtualBox
+Vagrantfile to Build a Ubuntu Desktop 18.04 LTS for VirtualBox
 
 ## Include
 - Basic Linux Packages:\
