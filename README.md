@@ -18,3 +18,18 @@ Vagrantfile to Build a Ubuntu Desktop 18.04 LTS for VirtualBox
 - Node & NPM
 - Open JDK 8
 - Jenkins
+
+## Vagrant Commands
+### To start VM
+
+```vagrant up```
+
+### To stop VM 
+```vagrant halt```
+
+### SSH
+```vagrant ssh```
+
+## VM Credential
+user: vagrant
+password: vagrant 
