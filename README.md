@@ -2,7 +2,7 @@
 Vagrantfile to Build a Ubuntu 18.04 LTS Desktop
 
 ## Include
-- Basic Linux Packages:
+- Basic Linux Packages:\
     vim \
     apt-transport-https \
     ca-certificates \
