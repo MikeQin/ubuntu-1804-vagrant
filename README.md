@@ -34,6 +34,6 @@ Box: ```peru/ubuntu-18.04-desktop-amd64```
 
 ## VM Credential
 ```
-user: vagrant\
+user: vagrant
 password: vagrant
 ```
