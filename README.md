@@ -1,5 +1,7 @@
 # Ubuntu Desktop 18.04 LTS Using Vagrant for VirtualBox
-Vagrantfile to Build a Ubuntu Desktop 18.04 LTS for VirtualBox
+Vagrantfile to Build a Ubuntu Desktop 18.04 LTS for VirtualBox.
+
+Box: peru/ubuntu-18.04-desktop-amd64
 
 ## VM Includes
 - Basic Linux Packages:\
@@ -31,5 +33,5 @@ Vagrantfile to Build a Ubuntu Desktop 18.04 LTS for VirtualBox
 ```vagrant ssh```
 
 ## VM Credential
-user: vagrant
+user: vagrant\
 password: vagrant 
