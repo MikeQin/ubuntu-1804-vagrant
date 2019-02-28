@@ -5,16 +5,10 @@ Box: ```peru/ubuntu-18.04-desktop-amd64```
 
 ## VM Includes
 - Basic Linux Packages:\
-    vim \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    tree \
-    git \
-    wget \
-    leafpad \
-    gnupg-agent \
-    software-properties-common
+```
+  vim apt-transport-https ca-certificates curl tree git wget 
+  leafpad gnupg-agent software-properties-common
+```
 - Docker
 - Docker Compose
 - Node & NPM
