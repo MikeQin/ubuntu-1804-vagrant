@@ -1,4 +1,4 @@
-# Ubuntu Server 18.04.4
+# Ubuntu Server 18.04.3
 
 Link: https://app.vagrantup.com/peru/boxes/ubuntu-18.04-server-amd64
 
