@@ -1,5 +1,5 @@
 # Add a box to local machine: 
-#   vagrant box add action-test/ubuntu-18.04-server-amd64
+#   vagrant box add peru/ubuntu-18.04-server-amd64
 #   vagrant box list
 #   vagrant box -help
 # ---------------------------------
@@ -13,16 +13,16 @@
 # user: vagrant
 # password: vagrant
 # 
-# Ubuntu 18.04.4 Server
-# vagrant init action-test/ubuntu-18.04-server-amd64 \
-#  --box-version 20200218.05
+# Ubuntu 18.04.3 Server
+# vagrant init peru/ubuntu-18.04-server-amd64 \
+#   --box-version 20200207.01
 # vagrant up
 
 Vagrant.configure("2") do |config|
 
-  # Ubuntu 18.04.4 Server
-  config.vm.box = "action-test/ubuntu-18.04-server-amd64"
-  config.vm.box_version = "20200218.05"
+  # Ubuntu 18.04.3 Server
+  config.vm.box = "peru/ubuntu-18.04-server-amd64"
+  config.vm.box_version = "20200207.01"
   config.vm.provider "virtualbox" do |v|
     v.gui = true
     v.name = "vagrant-ubuntu-server"

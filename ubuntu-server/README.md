@@ -1,6 +1,6 @@
 # Ubuntu Server 18.04.4
 
-Link: https://app.vagrantup.com/action-test/boxes/ubuntu-18.04-server-amd64
+Link: https://app.vagrantup.com/peru/boxes/ubuntu-18.04-server-amd64
 
 ## VM Includes
 
@@ -10,8 +10,8 @@ Link: https://app.vagrantup.com/action-test/boxes/ubuntu-18.04-server-amd64
 ## Vagrant Commands
 
 ```bash
-# vagrant init action-test/ubuntu-18.04-server-amd64 \
-#  --box-version 20200218.05
+# vagrant init peru/ubuntu-18.04-server-amd64 \
+#   --box-version 20200207.01
 
 # To start VM
 vagrant up
