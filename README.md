@@ -4,6 +4,8 @@ To create Ubuntu 18.04.3:
 - [Ubuntu Desktop](ubuntu-desktop/README.md)
 - [Ubuntu Server](ubuntu-server/README.md)
 
+### Install Ubuntu
+
 ```bash
 # Init
 vagrant init
@@ -15,3 +17,13 @@ virtualbox.customize ["modifyvm", :id, "--clipboard-mode", "bidirectional"]
 # To start VM
 vagrant up
 ```
+
+### Mouse Integration
+
+- After VM created, go to `Settings -> System -> Motherboard -> Pointing Device`:
+- Set the value to `USB Tablet`
+
+### Change Network Settings if necessary
+
+- NAT Adapter -> Bridged Adapter
+- Add: Host-only Adapter
