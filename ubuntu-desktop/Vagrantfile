@@ -20,10 +20,10 @@
 Vagrant.configure("2") do |config|
   # Ubuntu 18.04.3 Desktop
   config.vm.box = "peru/ubuntu-18.04-desktop-amd64"
-  config.vm.box_version = "20200207.01"
+  #config.vm.box_version = "20200207.01"
   config.vm.provider "virtualbox" do |v|
     v.gui = true
-    v.name = "vagrant-ubuntu-desktop"
+    v.name = "ubuntu-desktop"
     v.memory = 4096
     v.cpus = 2
   end

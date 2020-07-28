@@ -11,7 +11,7 @@ EOF
 source $HOME/.profile
 
 # Change owner for .dbus dir
-sudo chown -R $USER:$USER $HOME/.dbus
+# sudo chown -R $USER:$USER $HOME/.dbus
 
 # Add more user config below
 # ...
