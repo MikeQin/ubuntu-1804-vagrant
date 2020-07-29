@@ -2,7 +2,7 @@
 export DEBIAN_FRONTEND=noninteractive
 export APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=1
 
-echo "~ Bootstrap ~"
+echo "~ bootstrap ~"
 
 # Update and upgrade first
 apt-get update && apt-get upgrade -yq
@@ -16,9 +16,7 @@ apt-get install -yq \
     tree \
     git \
     wget \
-    leafpad \
-    gnupg-agent \
-    software-properties-common
+    gedit
 
 # Add apt-key and apt-repository for docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
@@ -70,3 +68,5 @@ chmod +x /usr/local/bin/docker-compose
 apt-get update
 apt-get upgrade -yq
 apt autoremove --purge -yq
+
+echo "~ bootstrap COMPLETED ~"

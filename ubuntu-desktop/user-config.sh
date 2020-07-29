@@ -1,7 +1,7 @@
 #!/bin/bash -eux
 export DEBIAN_FRONTEND=noninteractive
 
-echo "~ User-Config ~"
+echo "~ user-config ~"
 
 # User profile
 cat <<EOF >> $HOME/.profile
@@ -15,3 +15,5 @@ source $HOME/.profile
 
 # Add more user config below
 # ...
+
+echo "~ Vagrant SUCCESS ~"

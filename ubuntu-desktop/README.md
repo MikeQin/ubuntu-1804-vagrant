@@ -1,4 +1,4 @@
-# Ubuntu Desktop 18.04.3
+# Ubuntu Desktop 20.04 LTS
 
 Link: https://app.vagrantup.com/peru/boxes/ubuntu-18.04-desktop-amd64
 
@@ -7,9 +7,6 @@ Link: https://app.vagrantup.com/peru/boxes/ubuntu-18.04-desktop-amd64
 - Basic Linux Packages
 - Docker
 - Docker Compose
-- Node & NPM
-- Open JDK 8
-- Jenkins
 
 ## Vagrant Commands
 
@@ -27,6 +24,9 @@ virtualbox.customize ["modifyvm", :id, "--clipboard-mode", "bidirectional"]
 
 # To start VM
 vagrant up
+
+# Force provision if the first time failed
+vagrant provision
 
 # To stop VM 
 vagrant halt
