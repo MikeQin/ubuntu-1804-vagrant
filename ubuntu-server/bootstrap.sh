@@ -13,8 +13,6 @@ apt-get install -yq \
     apt-transport-https \
     ca-certificates \
     curl \
-    git \
-    wget \
     gnupg-agent \
     software-properties-common
 

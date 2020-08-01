@@ -8,3 +8,5 @@ cat <<EOF >> $HOME/.profile
 export PATH=$PATH:.
 EOF
 source $HOME/.profile
+
+echo "~ Ubuntu Server Provision COMPLETED ~"

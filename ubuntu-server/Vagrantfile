@@ -14,21 +14,22 @@
 # password: vagrant
 # 
 # Ubuntu 18.04.3 Server
-# vagrant init peru/ubuntu-18.04-server-amd64 \
+# vagrant init peru/ubuntu-20.04-server-amd64 \
 #   --box-version 20200207.01
 # vagrant up
 
 Vagrant.configure("2") do |config|
 
   # Ubuntu 18.04.3 Server
-  config.vm.box = "peru/ubuntu-18.04-server-amd64"
-  config.vm.box_version = "20200207.01"
+  config.vm.box = "peru/ubuntu-20.04-server-amd64"
+  #config.vm.box_version = "20200707.01"
   config.vm.provider "virtualbox" do |v|
     v.gui = true
-    v.name = "vagrant-ubuntu-server"
+    v.name = "node-1"
     v.memory = 2048
     v.cpus = 2
   end
   config.vm.provision "shell", path: "bootstrap.sh", args: ["vagrant"]
+  #config.vm.provision "shell", path: "install_kubectl.sh", args: ["vagrant"]
   config.vm.provision "shell", path: "user-config.sh", privileged: false
 end
