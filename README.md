@@ -1,6 +1,6 @@
 # Vagrant
 
-To create Ubuntu 20.04:
+To create Ubuntu 20.04 LTS:
 - [Ubuntu Desktop](ubuntu-desktop/README.md)
 - [Ubuntu Server](ubuntu-server/README.md)
 

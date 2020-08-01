@@ -1,5 +1,5 @@
 # Add a box to local machine: 
-#   vagrant box add peru/ubuntu-18.04-desktop-amd64
+#   vagrant box add peru/ubuntu-20.04-desktop-amd64
 #   vagrant box list
 #   vagrant box -help
 # ---------------------------------

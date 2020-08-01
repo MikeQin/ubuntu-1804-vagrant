@@ -98,6 +98,8 @@ kubectl version --short
 
 ## Install Rancher
 
+Remember, that running the Rancher server uses port 8888 and 4443 to avoid conflicts if the Rancher server and Master server is on the same VM.
+
 ```bash
 docker run -d --restart=unless-stopped -p 8888:80 -p 4443:443 -v /opt/rancher:/var/lib/rancher \
   --name rancher rancher/rancher:latest
@@ -108,7 +110,8 @@ docker run -d --restart=unless-stopped -p 8888:80 -p 4443:443 -v /opt/rancher:/v
 # Persistent volume: /opt/rancher
 ```
 
-To stop rancher server container before shutting down your VM:
+To stop rancher server container before shutting down your VM
+
 ```bash
 docker stop rancher
 ```
@@ -180,10 +183,10 @@ kubectl -n cattle-system logs -l app=cattle-cluster-agent
 # You've got the command from the Rancher UI
 
 # Sample 1
-curl --insecure -sfL https://master:8443/v3/import/qcqjcwmggp9lzjpt6k8nw788gmhr9zqwhj2vcwqpdfz4gxq6t4p9fv.yaml | kubectl apply -f -
+curl --insecure -sfL https://master:4443/v3/import/qcqjcwmggp9lzjpt6k8nw788gmhr9zqwhj2vcwqpdfz4gxq6t4p9fv.yaml | kubectl apply -f -
 
 # Sample 2 - Home
-curl --insecure -sfL https://master:8443/v3/import/w8tfj4xs7nwd622g5bcjvbtmhvc985q8c7glgkz6c69h9626t5bb64.yaml | kubectl apply -f -
+curl --insecure -sfL https://master:4443/v3/import/w8tfj4xs7nwd622g5bcjvbtmhvc985q8c7glgkz6c69h9626t5bb64.yaml | kubectl apply -f -
 ```
 
 ## Reference
