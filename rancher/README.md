@@ -1,10 +1,10 @@
 # Rancher for Kubernetes
 
-### Install `docker` first
+## Install `docker` first
 
 See instructions for installing `docker`.
 
-### Disable `worker-node` firewall permanently on CentOS
+## Disable `worker-node` firewall permanently on CentOS
 
 Firewall on CentOS is enabled by default. We need to disable it to make the Kube cluster work. See intructions.
 
@@ -12,7 +12,7 @@ Firewall on CentOS is enabled by default. We need to disable it to make the Kube
 sudo systemctl status firewalld
 ```
 
-### Install `kubectl` using package manager
+## Optionally, Install `kubectl` using package manager
 
 - Install Guide, https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-linux
 
@@ -65,7 +65,7 @@ kubectl version --client
 kubectl version --short
 ```
 
-### Before Installing Rancher
+## Before Installing Rancher
 
 To install and run Rancher, execute the following Docker command on your host:
 
@@ -96,10 +96,10 @@ kubectl get nodes
 kubectl version --short
 ```
 
-### Install Rancher
+## Install Rancher
 
 ```bash
-docker run -d --restart=unless-stopped -p 80:80 -p 443:443 -v /opt/rancher:/var/lib/rancher \
+docker run -d --restart=unless-stopped -p 8888:80 -p 4443:443 -v /opt/rancher:/var/lib/rancher \
   --name rancher rancher/rancher:latest
 # rancher/rancher:stable
 # rancher/rancher:latest
@@ -115,7 +115,7 @@ docker stop rancher
 
 #### Initialize `server-url`
 
-For Rancher in VirtualBox, set `server-url` to Rancher Server's static IP address: 192.168.56.3 (for example). Rancher `server-url` in local VirtualBox must be static IP address in order to support the networking.
+For Rancher in VirtualBox, set `server-url` to Rancher Server's static IP address: 192.168.1.120 (for example). Rancher `server-url` in local VirtualBox must be static IP address in order to support the networking.
 
 #### Reset admin password
 
@@ -172,7 +172,7 @@ kubectl -n cattle-system get pods -l app=cattle-cluster-agent -o wide
 kubectl -n cattle-system logs -l app=cattle-cluster-agent
 ```
 
-### Add Cluster - Import (from existing cluster) | Custom (preferred)
+## Add Cluster - Import (from existing cluster) | Custom (preferred)
 
 - Run the kubectl command below on an existing Kubernetes cluster running a supported Kubernetes version to import it into Rancher:
 
@@ -186,7 +186,7 @@ curl --insecure -sfL https://master:8443/v3/import/qcqjcwmggp9lzjpt6k8nw788gmhr9
 curl --insecure -sfL https://master:8443/v3/import/w8tfj4xs7nwd622g5bcjvbtmhvc985q8c7glgkz6c69h9626t5bb64.yaml | kubectl apply -f -
 ```
 
-### Reference
+## Reference
 
 - Rancher Quick Start, https://rancher.com/quick-start/
 - Rancher Quick Start Guide, https://rancher.com/docs/rancher/v2.x/en/quick-start-guide/
