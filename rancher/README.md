@@ -208,6 +208,9 @@ watch kubectl get all -o wide
 
 ## Create a new Kubernetes Cluster from Rancher
 
+1. Run the Kubernetes docker command on the Master node first, please wait until the cluster is successfully created;
+2. Then, Run the Kubernetes docker command on the Worker node to join the cluster
+
 ```
 sudo docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run rancher/rancher-agent:v2.3.4 --server https://master:8443 --token xgdhnpqvxsh4cmj9t5s4wtkgfrh5qz8v5zhpj2qhmrmvgmdfvctvll --ca-checksum 7902375b8b50ceaeec92d0980e4635d24be0f463e3e5bc2e3f5b49a460446bbb --etcd --controlplane --worker
 ```
