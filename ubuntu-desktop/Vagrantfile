@@ -28,5 +28,6 @@ Vagrant.configure("2") do |config|
   end
   config.vm.provision "shell", path: "bootstrap.sh", args: ["vagrant"]
   config.vm.provision "shell", path: "install_kubectl.sh", args: ["vagrant"]
+  config.vm.provision "shell", path: "install_helm.sh", args: ["vagrant"]
   config.vm.provision "shell", path: "user-config.sh", privileged: false
 end
