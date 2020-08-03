@@ -22,7 +22,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "peru/ubuntu-20.04-desktop-amd64"
   config.vm.provider "virtualbox" do |v|
     v.gui = true
-    v.name = "ubuntu-20.04"
+    v.name = "dekstop"
     v.memory = 4096
     v.cpus = 2
   end
