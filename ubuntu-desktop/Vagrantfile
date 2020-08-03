@@ -18,9 +18,8 @@
 # vagrant up
 
 Vagrant.configure("2") do |config|
-  # Ubuntu 18.04.3 Desktop
+  # Ubuntu 20.04 Desktop
   config.vm.box = "peru/ubuntu-20.04-desktop-amd64"
-  # config.vm.box_version = "20200707.01"
   config.vm.provider "virtualbox" do |v|
     v.gui = true
     v.name = "ubuntu-20.04"
